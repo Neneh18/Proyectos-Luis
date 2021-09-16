@@ -1,0 +1,31 @@
+/* Esto es un comentario */
+h1{
+    font-family: verdana;
+    font-size: large;
+    text-align: center;
+}
+h3{
+    font-family: verdana;
+    font-size: medium;
+    text-align: center;
+}
+p{
+    font-family: verdana;
+    font-size: 12px;
+}
+.parrafo{
+    color: blue;
+}
+.img{
+    border: 5px solid black;
+    border-left: 6px double black; /* Este funciona mejor */
+    border-bottom-left-radius: 6px; /* Este está interesante */
+}
+header{
+    background-image: url(https://fondosmil.com/fondo/62200.jpg);
+    border: 5px solid black;
+}
+.der{
+    font-family: 'Times New Roman';
+    font-style: oblique;
+}
