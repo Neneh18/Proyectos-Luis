@@ -2,7 +2,9 @@
 h1{
     font-family: verdana;
     font-size: large;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 0px;
+    height: 0px;
 }
 h3{
     font-family: verdana;
@@ -15,17 +17,224 @@ p{
 }
 .parrafo{
     color: blue;
-}
-.img{
-    border: 5px solid black;
-    border-left: 6px double black; /* Este funciona mejor */
-    border-bottom-left-radius: 6px; /* Este está interesante */
-}
-header{
-    background-image: url(https://fondosmil.com/fondo/62200.jpg);
-    border: 5px solid black;
+    border: 2px solid white; 
+    border-radius: 2px;
 }
 .der{
     font-family: 'Times New Roman';
     font-style: oblique;
 }
+body{
+    background-color: #a9c9be;
+}
+div{
+    text-align: center;
+}
+.nav-enlace:hover{
+    background: rgb(20, 7, 70);
+    color: #f1f1f1;
+}
+.nav-enlace{
+    display: inline-block;
+    width: auto;
+    background: rgb(196, 169, 83);
+    color: black;
+    padding: 10px 10px
+    
+}
+nav a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+nav{
+    text-align: right;
+    width: 100%;
+}
+aside{
+    float: left;
+    width: 15%;
+}
+.ind{
+    text-align: center;
+    clear: both;
+}
+#plegable{
+    cursor: pointer;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    clear: both;
+}
+.conte-plegable{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.conte-plegable a{
+    color: black;
+    padding: auto;
+    text-decoration: none;
+    display: flex;
+}
+.conte-plegable a:hover{
+    background-color: #f1f1f1;
+}
+.contenedor:hover .conte-plegable{
+    display: block;
+    
+}
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 35px 50px 180px;
+}
+.hijoA{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+.hijoB{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    border: 2px solid black;
+}
+.hijoC{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    border: 2px solid black;
+}
+.hijoD{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    border: 2px solid black;
+    
+}
+.hijoE{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    border: 2px solid black;
+}
+.bordet{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    border: 2px solid black;
+    border-top-left-radius: 4pc;
+    border-top-right-radius: 4pc;
+    background-color: rgb(218, 151, 70);
+}
+.fondob{
+    background-color: rgb(218, 151, 70);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+}
+.bA{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    border: 2px solid black;
+    border-bottom-left-radius: 1pc;
+}
+.bB{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    border: 2px solid black;
+    
+}
+.bC{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    border: 2px solid black;
+    
+}
+.bD{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    border: 2px solid black;
+    border-bottom-right-radius: 1pc;
+}
+.hijoA p, .hijoB p, .hijoC p, .hijoD p, .hijoE p{
+    font-family: 'Times New Roman';
+    font-size: 10.2pt;
+} 
+.bA:hover img, .bB:hover img, .bC:hover img, .bD:hover img{
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.fotos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 35px 150px 150px;
+    
+}
+.bb1{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    border: 2px solid black;
+    
+}
+.b1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; 
+    border: 2px solid black;
+    
+}
+.b2{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 2px solid black;
+    
+}
+.b3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 2px solid black;
+    
+}
+.bb1, .b1, .b2, .b3{
+    background-color: rgb(207, 142, 167);
+}
+
+
+
+
+<section id="galeria">
+				<div class="container-fluid">
+				<div class="row">
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="img/servicio1.jpg">
+							<h4>Imagen1</h4>
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="img/servicio2.jpg">
+							<h4>Imagen2</h4>
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado
+
+object: relative
